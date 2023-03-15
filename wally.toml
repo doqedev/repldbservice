@@ -4,7 +4,6 @@ version = "0.1.0"
 realm = "shared"
 description = "Replit's datbase implementation in ROBLOX!"
 license = "MIT"
-authors = ["doqe"]
 registry = "https://github.com/UpliftGames/wally-index"
 
 [dependencies]
