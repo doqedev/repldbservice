@@ -12,7 +12,7 @@ Paste this into your wally.toml dependencies:
 
 ```
 
-repldbservice = "doqedev/repldbservice@0.1.0"
+repldbservice = "doqedev/repldbservice@0.2.1"
 
 ```
 
