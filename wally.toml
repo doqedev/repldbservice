@@ -5,6 +5,6 @@ realm = "shared"
 description = "Replit's datbase implementation in ROBLOX!"
 license = "MIT"
 authors = ["doqe"]
-registry = "https://github.com/doqedev/repldbservice"
+registry = "https://github.com/UpliftGames/wally-index"
 
 [dependencies]
