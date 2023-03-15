@@ -1,0 +1,11 @@
+[package]
+name = "doqe/repldbservice"
+version = "0.1.0"
+realm = "shared"
+description = "Replit's datbase implementation in ROBLOX!"
+license = "MIT"
+authors = ["doqe"]
+registry = "https://github.com/doqedev/repldbservice"
+realm = "shared"
+
+[dependencies]
