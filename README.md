@@ -10,7 +10,10 @@ I really just made this so you can sync your Replit projects with your ROBLOX pr
 
 Paste this into your wally.toml dependencies:
 
-```
+NOTE: you dont need `[server-dependencies]` if you already have it, just put it at the bottom of the dependencies.
+
+```toml
+[server-dependencies]
 
 repldbservice = "doqedev/repldbservice@0.2.1"
 
