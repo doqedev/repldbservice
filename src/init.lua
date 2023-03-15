@@ -15,6 +15,18 @@ local function urlencode(url)
 	return url
 end
 
+--[=[
+	@return String
+	Gets a certain value from a key in the database.
+
+
+	```lua
+	db:GetKey("messageoftheday", true) -- returns "HELLO REPL"
+
+	db:GetKey("messageoftheday") -- returns HELLO REPL
+	```
+]=]
+
 function db:GetKey(key: string, quotes: boolean)
 	local resp = HTTPService:RequestAsync({
 		Url = self.key .. "/" .. key,
@@ -37,6 +49,16 @@ function db:GetKey(key: string, quotes: boolean)
 	end
 end
 
+--[=[
+	@return (boolean, any)
+
+	Sets the key in the database to a certain value.
+
+	```lua
+		db:SetKey("messageoftheday", "testing!") -- true
+	```
+]=]
+
 function db:SetKey(key: string, value: string)
 	if typeof(value) ~= "string" then
 		error("Value not a string, try serializing!", 5)
@@ -56,6 +78,16 @@ function db:SetKey(key: string, value: string)
 	end
 end
 
+--[=[
+	@return (boolean, any)
+
+	Sets the key in the database to a certain value.
+
+	```lua
+		db:DeleteKey("messageoftheday") -- true
+	```
+]=]
+
 function db:DeleteKey(key: string)
 	local resp = HTTPService:RequestAsync({
 		Url = self.key .. "/" .. key,
@@ -69,13 +101,33 @@ function db:DeleteKey(key: string)
 	end
 end
 
-function db:DeleteMultiple(keys: {})
+--[=[
+	@return nil
+
+	Sets the key in the database to a certain value.
+
+	```lua
+		db:DeleteMultipleKeys({"key1", "key2"})
+	```
+]=]
+
+function db:DeleteMultipleKeys(keys: {})
 	for _, v in pairs(keys) do
 		self:DeleteKey(v)
 	end
 end
 
-function db:SetMultiple(keys: {})
+--[=[
+	@return nil
+
+	Sets the key in the database to a certain value.
+
+	```lua
+		db:SetMultiple({["key1"] = "dog", ["key2"] = "cat"})
+	```
+]=]
+
+function db:SetMultipleKeys(keys: {})
 	for i, v in pairs(keys) do
 		self:SetKey(i, v)
 	end
