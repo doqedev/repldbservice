@@ -2,7 +2,33 @@
 
 Based off of [FirebaseService](https://devforum.roblox.com/t/open-source-firebaseservice/296753)
 
-I really just made this so you can sync your Replit projects with your ROBLOX projects, which actually seems kinda useful for moderation bots.
+I really just made this so you can sync your Replit projects with your ROBLOX projects, which actually seems kinda useful for moderation bots. I've already tried using an express project for a mod panel and it works!
+
+# How to use
+
+* Open a [replit](https://replit.com/) project.
+* Go to the shell (wait for the Nix Environment to load)
+* Execute the command: `echo $REPLIT_DB_URL`
+* Click on the URL
+* Copy the tab's url
+* Put this into your script:
+```lua
+local RDBS = require(path.to.your.file)
+local db = RDBS.new("database url, keep this very secret!")
+
+-- Examples
+
+db:GetKey("messageoftheday", true) -- returns "HELLO REPL"
+db:GetKey("messageoftheday") -- returns HELLO REPL
+
+db:SetKey("messageoftheday", "testing!") -- true (success?)
+
+db:DeleteKey("messageoftheday") -- true
+
+-- Multiple Keys
+db:DeleteMultipleKeys({"key1", "key2"})
+db:SetMultiple({["key1"] = "dog", ["key2"] = "cat"})
+```
 
 # Installation
 
