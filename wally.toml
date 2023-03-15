@@ -1,5 +1,5 @@
 [package]
-name = "doqe/repldbservice"
+name = "doqedev/repldbservice"
 version = "0.1.0"
 realm = "shared"
 description = "Replit's datbase implementation in ROBLOX!"

@@ -10,7 +10,7 @@ coming soon kinda
 paste this into your wally.toml dependencies
 
 ```
-repldbservice = "doqe/repldbservice@0.1.0"
+repldbservice = "doqedev/repldbservice@0.1.0"
 ```
 
 ### Module
