@@ -49,7 +49,7 @@ Learn more at [wally.run](https://wally.run)
 
 ## ModuleScript
 
-Copy and paste [this module script](https://github.com/doqedev/repldbservice/releases/tag/0.2.2) into a new module script.
+Download [this module script](https://github.com/doqedev/repldbservice/releases/tag/0.2.2) and put it in roblox studio.
 
 OR
 
