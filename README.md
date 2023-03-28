@@ -49,7 +49,7 @@ Learn more at [wally.run](https://wally.run)
 
 ## ModuleScript
 
-Copy and paste [this module script](src/init.lua) into a new module script.
+Copy and paste [this module script](https://github.com/doqedev/repldbservice/releases/tag/0.2.2) into a new module script.
 
 OR
 
