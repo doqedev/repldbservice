@@ -61,7 +61,7 @@ end
 
 function db:SetKey(key: string, value: string)
 	if typeof(value) ~= "string" then
-		error("Value not a string, try serializing!", 5)
+		warn("[REPLDB] Value not a string, try serializing!", 5)
 	end
 
 	local resp = HTTPService:RequestAsync({
