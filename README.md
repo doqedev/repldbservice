@@ -41,7 +41,7 @@ NOTE: you dont need `[server-dependencies]` if you already have it, just put it 
 ```toml
 [server-dependencies]
 
-repldbservice = "doqedev/repldbservice@0.2.1"
+repldbservice = "doqedev/repldbservice@0.2.2"
 
 ```
 
